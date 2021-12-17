@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace PierresOrders.Models
 {
@@ -15,11 +16,17 @@ namespace PierresOrders.Models
       Description = description;
       Price = price;
       Date = date;
+      _orderList.Add(this);
     }
 
     public static List<Order> GetAll()
     {
       return _orderList;
+    }
+
+    public static void ClearAll()
+    {
+      _orderList.Clear();
     }
   }
 }
