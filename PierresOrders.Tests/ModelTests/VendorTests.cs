@@ -6,8 +6,13 @@ using System;
 namespace PierresOrders.Tests
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
+
     [TestMethod] //Test 6
     public void VendorConstructor_CreateInstanceOfVendor_Vendor()
     {
@@ -46,7 +51,7 @@ namespace PierresOrders.Tests
       string description = "A Bar";
       Vendor newVendor = new Vendor(name, description);
       
-      int result = 0;
+      int result = newVendor.Id;
 
       Assert.AreEqual(1, result);
     }

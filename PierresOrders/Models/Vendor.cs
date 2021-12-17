@@ -18,5 +18,10 @@ namespace PierresOrders.Models
       Id = _vendorList.Count;
       Orders = new List<Order>{};
     }
+
+    public static void ClearAll()
+    {
+      _vendorList.Clear();
+    }
   }
 }
