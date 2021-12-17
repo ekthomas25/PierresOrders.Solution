@@ -38,5 +38,17 @@ namespace PierresOrders.Tests
 
       Assert.AreEqual(description, result);
     }
+
+    [TestMethod] //Test 9
+    public void GetId_VendorsAreAssignedAnId_Int()
+    {
+      string name = "Kevin and Suzie's Bar";
+      string description = "A Bar";
+      Vendor newVendor = new Vendor(name, description);
+      
+      int result = 0;
+
+      Assert.AreEqual(1, result);
+    }
   }
 }
