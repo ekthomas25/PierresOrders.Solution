@@ -24,6 +24,9 @@ namespace PierresOrders.Models
       _vendorList.Clear();
     }
 
-    
+    public static List<Vendor> GetAll()
+    {
+      return _vendorList;
+    }
   }
 }
