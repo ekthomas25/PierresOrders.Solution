@@ -23,5 +23,7 @@ namespace PierresOrders.Models
     {
       _vendorList.Clear();
     }
+
+    
   }
 }
