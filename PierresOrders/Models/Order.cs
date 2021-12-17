@@ -10,6 +10,7 @@ namespace PierresOrders.Models
     public int Price { get; set; }
     public int Date { get; set; }
     private static List<Order> _orderList = new List<Order> { };
+    public int Id { get; }
     public Order(string title, string description, int price, int date)
     {
       Title = title;
@@ -17,6 +18,7 @@ namespace PierresOrders.Models
       Price = price;
       Date = date;
       _orderList.Add(this);
+      Id = _orderList.Count;
     }
 
     public static List<Order> GetAll()

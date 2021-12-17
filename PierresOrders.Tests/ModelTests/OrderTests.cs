@@ -42,7 +42,17 @@ namespace PierresOrders.Tests
       List<Order> result = Order.GetAll();
 
       CollectionAssert.AreEqual(newList, result);
+    }
 
+    [TestMethod] //Test 4
+    public void GetId_OrdersAreAssignedAnId_Int()
+    {
+      string title = "Order#1";
+      Order newOrder = new Order(title, "Description", 4, 211217);
+      
+      int result = 0;
+
+      Assert.AreEqual(1, result);
     }
   }
 }
