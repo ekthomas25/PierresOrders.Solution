@@ -26,5 +26,17 @@ namespace PierresOrders.Tests
 
       Assert.AreEqual(name, result);
     }
+
+    [TestMethod] //Test 8
+    public void GetDetails_ReturnsDescription_String()
+    {
+      string name = "Kevin and Suzie's Bar";
+      string description = "A Bar";
+      Vendor newVendor = new Vendor(name, description);
+
+      string result = newVendor.Description;
+
+      Assert.AreEqual(description, result);
+    }
   }
 }
