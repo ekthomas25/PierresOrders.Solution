@@ -54,5 +54,16 @@ namespace PierresOrders.Tests
 
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod] //Test 5
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      Order newOrder1 = new Order("Title", "Description", 4, 211217);
+      Order newOrder2 = new Order("Title", "Description", 4, 211217);
+
+      Order result = new Order("Wrong order");
+
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }

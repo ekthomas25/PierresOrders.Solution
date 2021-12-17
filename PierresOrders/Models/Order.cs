@@ -30,5 +30,10 @@ namespace PierresOrders.Models
     {
       _orderList.Clear();
     }
+
+    public static Order Find(int searchId)
+    {
+      return _orderList[searchId-1];
+    }
   }
 }
