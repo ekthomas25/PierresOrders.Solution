@@ -50,7 +50,7 @@ namespace PierresOrders.Tests
       string title = "Order#1";
       Order newOrder = new Order(title, "Description", 4, 211217);
       
-      int result = 0;
+      int result = newOrder.Id;
 
       Assert.AreEqual(1, result);
     }
