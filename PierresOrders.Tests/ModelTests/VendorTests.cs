@@ -14,5 +14,17 @@ namespace PierresOrders.Tests
       Vendor newVendor = new Vendor("test", "test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+
+    [TestMethod] //Test 7
+    public void GetDetails_ReturnsName_String()
+    {
+      string name = "Kevin and Suzie's Bar";
+      string description = "A Bar";
+      Vendor newVendor = new Vendor(name, description);
+
+      string result = newVendor.Name;
+
+      Assert.AreEqual(name, result);
+    }
   }
 }
