@@ -61,7 +61,7 @@ namespace PierresOrders.Tests
       Order newOrder1 = new Order("Title", "Description", 4, 211217);
       Order newOrder2 = new Order("Title", "Description", 4, 211217);
 
-      Order result = new Order("Wrong order");
+      Order result = Order.Find(2);
 
       Assert.AreEqual(newOrder2, result);
     }
