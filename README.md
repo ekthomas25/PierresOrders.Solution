@@ -17,26 +17,26 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This web application was created for Pierre's Bakery to track the bakery's vendors and their orders. The web application has a form for the user to input a Vendor and the vendor description. After navigating to the Vendor's page, the user can add an order via a form or view the Vendor's order history._
 
 ## Setup/Installation Requirements
 
-* #### _Your computer will need to have GIT installed._
-* _If you do not currently have GIT installed you will need to follow the directions on GitHub's website for installing and setting up GIT. These can be found [here.](https://docs.github.com/en/get-started/quickstart/set-up-git)_
-* #### _Your computer will need to have Visual Studio Code installed._
-* _You can download the program [here.](https://code.visualstudio.com/download)_
-* #### _Your computer will need to have Node installed._
-* _You can learn how to download and install Node [here.](hhttps://nodejs.dev/learn/how-to-install-nodejs)_
+### Your computer will need to have the following installed and set up:
+* _[GIT](https://docs.github.com/en/get-started/quickstart/set-up-git)_
+* _[Visual Studio Code](https://code.visualstudio.com/download)_
+* _[Node](https://nodejs.dev/learn/how-to-install-nodejs)_
+* _.NET - [Mac](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-macos-x64-installer) or [Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-windows-x64-installer)_
 
 
-* _Once you have VSCode, Node, and GIT set up, you will need to open up your terminal and type the command:_
-git clone https://github.com/ekthomas25/i-p-galactic-calculator.git
+### File Setup
+
+* _Once you have VSCode, Node, and GIT set up, you will need to open up your terminal, navigate to your Desktop and type the command:_
+git clone https://github.com/ekthomas25/ip-PierresOrders.Solution.git
 
 * _This will clone the repository to your desktop and you will be able to then open the folder in VSCode._
-* _Open the terminal in VSCode and type the following command:_ npm install
-* _This will install and generate the neccessary files for this project._
-* _Eenter_ npm run build _into the terminal_
-* _Open dist/index.html in your browser_
+* _Open the terminal in VSCode and navigate to_ ip_Bakery.Solution>Bread _ and type the following command:_ dotnet run
+* _To view and run the provided tests, navigate to_ ip_Bakery.Solution>Bread.Tests
+* _Enter_ dotnet test _into the terminal_
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
