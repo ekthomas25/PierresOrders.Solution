@@ -1,15 +1,21 @@
-<h1>Add @Model.Name's new order</h1>
-
-<form action="/vendors/@Model.Id/orders" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderTitle">Order Title</label>
-  <input id="orderTitle" name="orderTitle" type="text">
-  <label for="orderDescription">Order Description</label>
-  <input id="orderDescription" name="orderDescription" type="text">
-  <label for="orderPrice">Order Price</label>
-  <input id="orderPrice" name="orderPrice" type="number" min="0">
-  <label for="orderDate">Order Date</label>
-  <input id="orderDate" name="orderDate" type="number" placeholder="Format: yearmonthday 211217">
-  <button type="submit">Add Order</button>
-
-</form>
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <h2>Add @Model.Name's new order</h2>
+  <hr>
+  <form action="/vendors/@Model.Id/orders" method="post">
+    <div class="form-group">
+      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+      <label for="orderTitle">Order Title</label>
+      <input id="orderTitle" name="orderTitle" class="form-control" type="text">
+      <label for="orderDescription">Order Description</label>
+      <input id="orderDescription" name="orderDescription" class="form-control" type="text">
+      <label for="orderPrice">Order Price</label>
+      <input id="orderPrice" name="orderPrice" class="form-control" type="number" min="0">
+      <label for="orderDate">Order Date</label>
+      <input id="orderDate" name="orderDate" class="form-control" type="number" placeholder="Format: yearmonthday 211217">
+    </div>
+    <button type="submit" class="btn btn-info">Add Order</button>
+  </form>
+</div>
