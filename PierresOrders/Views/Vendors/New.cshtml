@@ -1,9 +1,20 @@
 <h1>Add a vendor</h1>
 
-<form action="/vendors" method="post">
-<label for="vendorName">Vendor Name</label> 
-<input id="vendorName" name="vendorName" type="text" required>
-<label for="vendorDescript">Description</label>
-<input id="vendorDescript" name="vendorDescript" type="text">
-<button type="submit">Add Vendor</button>
-</form>
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <h2>Add A Vendor</h2>
+  <hr>
+  <form action="/vendors" method="post">
+  <div class="form-group">
+    <label for="vendorName">Vendor Name</label> 
+    <input id="vendorName" name="vendorName" class="form-control" type="text" required>
+  </div>
+  <div class="form-group">
+    <label for="vendorDescript">Description</label>
+    <input id="vendorDescript" name="vendorDescript" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn btn-info">Add Vendor</button>
+  </form>
+</div>
