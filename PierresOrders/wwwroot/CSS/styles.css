@@ -1,0 +1,64 @@
+h1 {
+  font-family: monospace;
+  font-size: 2.8em;
+  color: lightskyblue;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Concert One', cursive;
+  font-size: 2.5em;
+  color: rgb(6, 74, 117);
+}
+
+h3 {
+  font-family: monospace;
+  color: rgb(31, 80, 92);
+}
+
+h4 {
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+body {
+  background-color: rgb(235, 200, 154);
+}
+
+div#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 1.7em;
+  margin-bottom: 2em;
+  background-color: cornsilk;
+  color: black;
+}
+
+.container {
+  margin-top: 10em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: rgb(225, 238, 228);
+  border-radius: 10px;
+}
+
+.vendor {
+  background-color: rgb(195, 227, 235);
+  padding-left: 2em;
+  padding-left: 2em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  margin-bottom: 1em;
+  border-radius: 15px;
+}
+
+.order-history {
+  font-family: monospace;
+  color: rgb(8, 99, 155);
+}
