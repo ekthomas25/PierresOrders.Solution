@@ -37,7 +37,6 @@ namespace PierresOrders.Controllers
       return View(model);
     }
 
-    //This Create method creates new orders and belongs to Orders
     [HttpPost("/vendors/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string orderTitle, string orderDescript, int orderPrice, int orderDate)
     {
