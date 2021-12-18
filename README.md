@@ -10,6 +10,7 @@
 * _CSS_
 * _C#_
 * _.NET_
+* _ASP.NET_
 * _MSTest_
 * _Razor_
 * _Node_
@@ -34,22 +35,18 @@ _This web application was created for Pierre's Bakery to track the bakery's vend
 git clone https://github.com/ekthomas25/ip-PierresOrders.Solution.git
 
 * _This will clone the repository to your desktop and you will be able to then open the folder in VSCode._
-* _Open the terminal in VSCode and navigate to_ ip_Bakery.Solution>Bread _ and type the following command:_ dotnet run
-* _To view and run the provided tests, navigate to_ ip_Bakery.Solution>Bread.Tests
+* _Open the terminal in VSCode and navigate to_ ip-PierresOrders.Solution > PierresOrders _and type the following command:_ dotnet run
+* _To view and run the provided tests, navigate to_ ip-PierresOrders.Solution>PierresOrders.Tests
 * _Enter_ dotnet test _into the terminal_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known issues_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
-_If you have any questions or would like to reach out for any reason, please don't hesitate to send and email to [thomas.elizabeth.k@gmail.com](mailto:thomas.elizabeth.k@gmail.com)._
+_If you have any questions or would like to reach out for any reason, please don't hesitate to send an email to [thomas.elizabeth.k@gmail.com](mailto:thomas.elizabeth.k@gmail.com)._
 
 MIT License
 
