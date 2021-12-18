@@ -8,13 +8,13 @@
     <div class="form-group">
       <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
       <label for="orderTitle">Order Title</label>
-      <input id="orderTitle" name="orderTitle" class="form-control" type="text">
+      <input id="orderTitle" name="orderTitle" class="form-control" type="text" required>
       <label for="orderDescript">Order Description</label>
-      <input id="orderDescript" name="orderDescript" class="form-control" type="text">
+      <input id="orderDescript" name="orderDescript" class="form-control" type="text" required>
       <label for="orderPrice">Order Price</label>
-      <input id="orderPrice" name="orderPrice" class="form-control" type="number" min="0">
+      <input id="orderPrice" name="orderPrice" class="form-control" type="number" min="0" required>
       <label for="orderDate">Order Date</label>
-      <input id="orderDate" name="orderDate" class="form-control" type="number" placeholder="Format: yearmonthday 211217">
+      <input id="orderDate" name="orderDate" class="form-control" type="number" min="211217"placeholder="Format: yearmonthday 211217" required>
     </div>
     <button type="submit" class="btn btn-info">Add Order</button>
   </form>
