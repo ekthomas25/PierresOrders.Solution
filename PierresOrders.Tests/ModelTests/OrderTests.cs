@@ -13,14 +13,14 @@ namespace PierresOrders.Tests
       Order.ClearAll();
     }
 
-    [TestMethod] //Test 1
+    [TestMethod]
     public void OrderConstructor_CreateInstanceOfOrder_Order()
     {
       Order newOrder = new Order("Title", "Description", 4, 211217);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     
-    [TestMethod] //Test 2
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newOrder = new List<Order> { };
@@ -30,7 +30,7 @@ namespace PierresOrders.Tests
       CollectionAssert.AreEqual(newOrder, result);
     }
 
-    [TestMethod] //Test 3
+    [TestMethod]
     public void GetAll_ReturnsOrderDetails_OrderList()
     {
       string title1 = "Order1";
@@ -44,7 +44,7 @@ namespace PierresOrders.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
-    [TestMethod] //Test 4
+    [TestMethod]
     public void GetId_OrdersAreAssignedAnId_Int()
     {
       string title = "Order#1";
@@ -55,7 +55,7 @@ namespace PierresOrders.Tests
       Assert.AreEqual(1, result);
     }
 
-    [TestMethod] //Test 5
+    [TestMethod]
     public void Find_ReturnsCorrectOrder_Order()
     {
       Order newOrder1 = new Order("Title", "Description", 4, 211217);

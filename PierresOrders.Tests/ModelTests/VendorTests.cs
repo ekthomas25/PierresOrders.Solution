@@ -13,14 +13,14 @@ namespace PierresOrders.Tests
       Vendor.ClearAll();
     }
 
-    [TestMethod] //Test 6
+    [TestMethod]
     public void VendorConstructor_CreateInstanceOfVendor_Vendor()
     {
       Vendor newVendor = new Vendor("test", "test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
-    [TestMethod] //Test 7
+    [TestMethod]
     public void GetDetails_ReturnsName_String()
     {
       string name = "Kevin and Suzie's Bar";
@@ -32,7 +32,7 @@ namespace PierresOrders.Tests
       Assert.AreEqual(name, result);
     }
 
-    [TestMethod] //Test 8
+    [TestMethod]
     public void GetDetails_ReturnsDescription_String()
     {
       string name = "Kevin and Suzie's Bar";
@@ -44,7 +44,7 @@ namespace PierresOrders.Tests
       Assert.AreEqual(description, result);
     }
 
-    [TestMethod] //Test 9
+    [TestMethod]
     public void GetId_VendorsAreAssignedAnId_Int()
     {
       string name = "Kevin and Suzie's Bar";
@@ -56,7 +56,7 @@ namespace PierresOrders.Tests
       Assert.AreEqual(1, result);
     }
 
-    [TestMethod] //Test 10
+    [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       string name1 = "Kevin's Kafe";
@@ -72,7 +72,7 @@ namespace PierresOrders.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
-    [TestMethod] // Test 11
+    [TestMethod]
     public void Find_ReturnsVendorBasedOnId_Vendor()
     {
       string name1 = "Kevin's Kafe";
@@ -87,7 +87,7 @@ namespace PierresOrders.Tests
       Assert.AreEqual(newVendor2, result);
     }
 
-    [TestMethod] //Test 12
+    [TestMethod]
     public void AddOrder_AddsOrderToVendor_OrderList()
     {
       string title = "Order # 1";
